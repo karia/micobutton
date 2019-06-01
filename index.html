@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
+    <link rel='stylesheet' href='./style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,500,900&amp;subset=japanese" rel="stylesheet">
+</head>
+<body>
+    <h1>🔱堰代ミコボタン🍏 (web版)</h1>
+
+    <div>
+        <a href="https://www.youtube.com/channel/UCDh2bWI5EDu7PavqwICkVpA">YouTube Mico Channel / 堰代ミコ【ハニスト】</a><br>
+        <a href="https://twitter.com/Mico_HNST">Twitter @Mico_HNST</a>
+    </div>
+
+    <div id="stop_button">
+        <input type="button" value="再生を停止する" onclick="audio_stop()">
+    </div>
+
+    <div id="audio_button">
+        <h2>■<a href="https://www.youtube.com/watch?v=mcaDKdmGypU"> 【ネコトモ#16】のんびり猫と過ごすお昼【堰代ミコ / ハニスト】</a>より</h2>
+        <input type="button" value="こんにちミコミコ" id="konnichimicomico">
+        <input type="button" value="まじ？" id="maji">
+        <input type="button" value="えーやば" id="e-yaba">
+        <input type="button" value="スリスリ" id="surisuri">
+        <input type="button" value="花でも回収するか" id="hanademokaisyusuruka">
+        <input type="button" value="タンポポ2発目" id="tanpopofutatsume">
+        <input type="button" value="おつハニー" id="otsuhani">
+        
+        <h2>■<a href="https://www.youtube.com/watch?v=Q3hFm1324dQ">【新衣装お披露目！】ぼくアイドルになったよ！【堰代ミコ / ハニスト】</a>より</h2>
+        <input type="button" value="よっ大将やってる？" id="taishoyatteru">
+
+        <h2>■<a href="https://www.youtube.com/watch?v=1-JozPTQ8VY">【3D初お披露目！】体力尽きるまで動くよ！！#ミコの使い魔【堰代ミコ / ハニスト】</a>より</h2>
+        <input type="button" value="こんにちミコミコ（アイドルバージョン3D）" id="konnichimicomico_3d">
+        <input type="button" value="エリちゃん" id="elichan">
+    </div> 
+
+    <div id="about">
+    <ul>
+        <li>ここはバーチャルYouTuberユニット「ハニーストラップ」所属の堰代ミコ(Sekishiro Mico)さんを応援する、非公式のWebサイトです。</li>
+        <li>不具合報告や要望は<a href="https://github.com/karia/micobutton/issues">GitHub Issue</a>または<a href="https://twitter.com/karia">管理人のTwitter @karia</a>へお願いします。</li>
+        <li>インスパイア元：<a href="https://www.natorisana.love/">さなボタン2</a></li>
+    </ul>
+    </div>
+
+<script type="text/javascript">
+    var myAudio = new Audio();
+    var audio_button = document.getElementById('audio_button').childNodes;
+
+    for (var i = 0; i < audio_button.length; i++) {
+        audio_button[i].addEventListener('click', function () {
+            myAudio.src = './' + this.id + '.wav';
+            myAudio.play();
+        })   
+    }
+
+    function audio_stop() {
+        myAudio.pause();
+        myAudio.currentTime = 0;
+    }
+    </script>
+</body>
+</html>
