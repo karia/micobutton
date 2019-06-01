@@ -1,29 +1,32 @@
 html,body{
     color: black;
     font-family: 'Noto Sans JP', sans-serif;
-    margin: 20px;
+    margin: 5px;
+}
+h1{
+    margin-bottom: 0.5em;
 }
 #stop_button {
     input{
         border: thin #000000 solid;
         padding: 3px;
-        margin: 10px;
+        margin-bottom: 1em;
     }
 }
 #audio_button {
     h2{
         font-size: medium;
-        margin: 10px;
+        margin-bottom: 1em;
     }
     input{
         border: thin #000000 solid;
         background-color: #99ff99;
         padding: 3px;
-        margin-bottom: 10px;
+        margin-bottom: 1em;
     }
 }
 #about {
     ul{
-        margin-top: 10em;
+        margin: 2em;
     }
 }
