@@ -34,10 +34,20 @@
         <input type="button" value="スリスリ" id="surisuri">
         <input type="button" value="花でも回収するか" id="hanademokaisyusuruka">
         <input type="button" value="タンポポ2発目" id="tanpopofutatsume">
+        <input type="button" value="いやー わかんない" id="iya-wakannai">
         <input type="button" value="おつハニー" id="otsuhani">
         
         <h2>■<a href="https://www.youtube.com/watch?v=Q3hFm1324dQ">【新衣装お披露目！】ぼくアイドルになったよ！【堰代ミコ / ハニスト】</a>より</h2>
+        <input type="button" value="こんばんミコミコ" id="konbanmicomico">
+        <input type="button" value="久しぶりだな人間たち" id="hisashiburidananingentachi">
+        <input type="button" value="めっちゃツイートして" id="mechatweetshite">
+        <input type="button" value="人間たちは～" id="ningentachiha">
+        <input type="button" value="じゃあコメントで「俺のこと好き？」って聞いてみて" id="orenokotosuki">
+        <input type="button" value="こんばんミコミコ（アイドルバージョン）" id="konbanmicomico_idol">
         <input type="button" value="よっ大将やってる？" id="taishoyatteru">
+        <input type="button" value="ボクの下おっぱいが無くなっているんですが" id="bokunoshitaoppai">
+        <input type="button" value="上目遣いできるかな" id="uwamedukaidekirukana">
+        <input type="button" value="(おせき民用)" id="oseki">
 
         <h2>■<a href="https://www.youtube.com/watch?v=1-JozPTQ8VY">【3D初お披露目！】体力尽きるまで動くよ！！#ミコの使い魔【堰代ミコ / ハニスト】</a>より</h2>
         <input type="button" value="こんにちミコミコ（アイドルバージョン）3D版" id="konnichimicomico_3d">
@@ -55,7 +65,7 @@
     <div id="about">
     <ul>
         <li>ここはバーチャルYouTuberユニット「ハニーストラップ」所属の堰代ミコ(Sekishiro Mico)さんを応援する、非公式のWebサイトです。</li>
-        <li>不具合報告や要望は<a href="https://github.com/karia/micobutton/issues">GitHub Issue</a>または<a href="https://twitter.com/karia">管理人のTwitter @karia</a>へお願いします。</li>
+        <li>感想・要望・不具合報告などはハッシュタグ<a href="https://twitter.com/search?vertical=default&q=%23%E3%83%9F%E3%82%B3%E3%83%9C%E3%82%BF%E3%83%B3&src=typd">#ミコボタン</a>・<a href="https://twitter.com/karia">管理人Twitter @karia</a>宛か、<a href="https://github.com/karia/micobutton/issues">GitHub Issues</a>へどうぞ。</li>
         <li>インスパイア元：<a href="https://www.natorisana.love/">さなボタン2</a></li>
     </ul>
     </div>
@@ -66,7 +76,7 @@
 
     for (var i = 0; i < audio_button.length; i++) {
         audio_button[i].addEventListener('click', function () {
-            myAudio.src = './sounds/' + this.id + '.wav';
+            myAudio.src = './sounds/' + this.id + '.mp4';
             myAudio.play();
         })   
     }
