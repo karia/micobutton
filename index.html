@@ -18,10 +18,18 @@
     <link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
     <link rel='stylesheet' href='./style.css'>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,500,900&amp;subset=japanese" rel="stylesheet">
+    <base target="_blank">
 </head>
 <body>
     <h1>🔱堰代ミコボタン🍏 (web版)</h1>
 
+    <div id="aboutmico">
+        <ul>
+            <li><a href="https://www.youtube.com/channel/UCDh2bWI5EDu7PavqwICkVpA">YouTube Mico Channel / 堰代ミコ【ハニスト】</a><br></li>
+            <li><a href="https://twitter.com/Mico_HNST">Twitter @Mico_HNST</a></li>
+        </ul>
+    </div>
+   
     <div id="stop_button">
         <input type="button" value="再生を停止する" onclick="audio_stop()">
     </div>
@@ -57,19 +65,22 @@
         <input type="button" value="今日いっぱいのおやつ代をくれた人間たちもありがとう" id="oyatsudai">
     </div>
 
-    <div>
-        <a href="https://www.youtube.com/channel/UCDh2bWI5EDu7PavqwICkVpA">YouTube Mico Channel / 堰代ミコ【ハニスト】</a><br>
-        <a href="https://twitter.com/Mico_HNST">Twitter @Mico_HNST</a>
+    <div class="about">
+        このサイトについて
+        <ul>
+            <li>ここはバーチャルYouTuberユニット「ハニーストラップ」所属の堰代ミコ(Sekishiro Mico)さんを応援する、非公式のWebサイトです。</li>
+            <li>感想・要望・不具合報告などはハッシュタグ<a href="https://twitter.com/search?vertical=default&q=%23%E3%83%9F%E3%82%B3%E3%83%9C%E3%82%BF%E3%83%B3&src=typd">#ミコボタン</a>・<a href="https://twitter.com/karia">管理人Twitter @karia</a>宛か、<a href="https://github.com/karia/micobutton/issues">GitHub Issues</a>へどうぞ。</li>
+            <li>インスパイア元：<a href="https://www.natorisana.love/">さなボタン2</a></li>
+        </ul>
     </div>
 
-    <div id="about">
-    <ul>
-        <li>ここはバーチャルYouTuberユニット「ハニーストラップ」所属の堰代ミコ(Sekishiro Mico)さんを応援する、非公式のWebサイトです。</li>
-        <li>感想・要望・不具合報告などはハッシュタグ<a href="https://twitter.com/search?vertical=default&q=%23%E3%83%9F%E3%82%B3%E3%83%9C%E3%82%BF%E3%83%B3&src=typd">#ミコボタン</a>・<a href="https://twitter.com/karia">管理人Twitter @karia</a>宛か、<a href="https://github.com/karia/micobutton/issues">GitHub Issues</a>へどうぞ。</li>
-        <li>インスパイア元：<a href="https://www.natorisana.love/">さなボタン2</a></li>
-    </ul>
+    <div class="about">
+        更新履歴
+        <ul>
+            <li>2019/06/04 <a href="https://www.youtube.com/watch?v=ioOliUDL5hk">以前使われていた</a>ボタンがDLできなくなっていたので作成・公開</li>
+        </ul>
     </div>
-
+    
 <script type="text/javascript">
     var myAudio = new Audio();
     var audio_button = document.getElementById('audio_button').childNodes;
