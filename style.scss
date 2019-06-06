@@ -6,16 +6,25 @@ html,body{
 h1{
     margin-bottom: 0.5em;
 }
+#aboutmico{
+    ul{
+        margin-bottom: 1.5em;
+        list-style-type: none;
+    }
+    li{
+        font-size: 135%;
+    }
+}
+.lastmodified {
+    ul{
+        margin-bottom: 1em;
+        list-style-type: none;
+    }
+}
 #stop_button {
     input{
         border: thin #000000 solid;
         padding: 3px;
-        margin-bottom: 1em;
-    }
-}
-#aboutmico{
-    ul{
-        margin-left: 2em;
         margin-bottom: 1em;
     }
 }
