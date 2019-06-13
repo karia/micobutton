@@ -30,9 +30,20 @@ h1{
     }
 }
 #audio_button {
+    a{
+        color: #494949;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
     h2{
         font-size: medium;
+        font-weight: normal;
         margin-bottom: 1em;
+        border-left: solid 10px #116611;
+        border-bottom: solid 1px #116611;
+        padding-left: 0.5em;
     }
     input{
         border: thin #000000 solid;
