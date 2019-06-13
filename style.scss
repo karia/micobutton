@@ -24,7 +24,8 @@ h1{
 #stop_button {
     input{
         border: thin #000000 solid;
-        padding: 3px;
+        border-radius: 10px;
+        padding: 3px 6px 3px 6px;
         margin-bottom: 1em;
     }
 }
@@ -35,8 +36,9 @@ h1{
     }
     input{
         border: thin #000000 solid;
+        border-radius: 10px;
         background-color: #99ff99;
-        padding: 3px;
+        padding: 3px 6px 3px 6px;
         margin-bottom: 1em;
     }
 }
